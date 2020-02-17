@@ -3,15 +3,21 @@
     <router-link to="/">home</router-link>
     <router-link to="/about">about</router-link>
     <router-view></router-view>
+
+    
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
-  components: {
-  }
+  components: {},
+  methods: {
+    
+  },
+  beforeCreate() {
+    console.log(this)
+  },
 }
 </script>
 
